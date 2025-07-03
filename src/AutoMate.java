@@ -135,14 +135,14 @@ public class AutoMate {
 
         // Scroll to the dish
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", secondDish);
-        Thread.sleep(1000);
+        Thread.sleep(5000);
 
         // Find and click 'Add' button
         WebElement addBtn = secondDish.findElement(By.cssSelector("button.add-button-center-container"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addBtn);
         System.out.println("✅ Clicked 'Add' for: " + itemNameToIncrement);
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         // Step 12: Add Item to Cart
         try {
